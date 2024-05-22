@@ -1,0 +1,23 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "tsc",
+    "run": "node build/index.js",
+    "start": "ts-node src"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.0.54",
+    "langchain": "^0.1.36",
+    "ollama": "^0.5.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2"
+  }
+}
